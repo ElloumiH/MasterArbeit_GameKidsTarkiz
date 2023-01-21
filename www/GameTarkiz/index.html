@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true" />
+    <title>index</title>
+    <style>
+    #animation_container {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    @font-face {
+        font-family: 'Lilita One';
+        src: url('fonts/LilitaOne.woff') format('woff'),
+            url('fonts/LilitaOne.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    </style>
+    <script src="libs/howler.min.js"></script>
+    <script src="libs/createjs.js"></script>
+    <script src="libs/zim_min.js"></script>
+    <script src="libs/game.js"></script>
+    <script src="index.js?1619786616983"></script>
+    <script>
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+
+    function init() {
+        canvas = document.getElementById("canvas");
+        anim_container = document.getElementById("animation_container");
+        dom_overlay_container = document.getElementById("dom_overlay_container");
+        var comp = AdobeAn.getComposition("D1C8CE1919874BEDAA9565410A10F9F9");
+        var lib = comp.getLibrary();
+        handleComplete({}, comp);
+    }
+
+    function handleComplete(evt, comp) {
+        var lib = comp.getLibrary();
+        var ss = comp.getSpriteSheet();
+        exportRoot = new lib.index();
+        stage = new lib.Stage(canvas);
+        stage = new zim.Stage(canvas);
+        stage.enableMouseOver();
+        createjs.Touch.enable(stage);
+        stageW = canvas.width;
+        stageH = canvas.height;
+        stage.setBounds(0, 0, stageW, stageH);
+        frame = new zim.Frame({ shim: { stage: stage, canvas: canvas } });
+        fnStartAnimation = function() {
+            stage.addChild(exportRoot);
+            createjs.Ticker.framerate = lib.properties.fps;
+            createjs.Ticker.addEventListener("tick", stage);
+        }
+        //Code to support hidpi screens and responsive scaling.
+        AdobeAn.makeResponsive(true, 'both', true, 1, [canvas, anim_container, dom_overlay_container]);
+        AdobeAn.compositionLoaded(lib.properties.id);
+        fnStartAnimation();
+    }
+    </script>
+</head>
+
+<body onload="init();" style="margin:0px;">
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1280px; height:720px">
+        <canvas id="canvas" width="1280" height="720" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
+        </div>
+    </div>
+</body>
+
+</html>

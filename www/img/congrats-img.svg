@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="227.418" height="155.447" viewBox="0 0 227.418 155.447">
+  <g id="Group_5238" data-name="Group 5238" transform="translate(-52.08 -34.681)">
+    <path id="Line_2" data-name="Line 2" d="M.5.5,21.528,28.537" transform="translate(100.697 35.861)" fill="none" stroke="#0f0f0f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/>
+    <path id="Line_2-2" data-name="Line 2" d="M.5.5,21.528,28.537" transform="translate(122.602 43.747)" fill="none" stroke="#167f71" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/>
+    <path id="Star" d="M7.94,12.437,3.305,15,4.19,9.572.44,5.729l5.182-.792L7.94,0l2.317,4.937,5.182.792L11.69,9.572,12.575,15Z" transform="translate(237.387 49.942)" fill="#fcc202"/>
+    <path id="Triangle" d="M6.133,0l6.133,12.266H0Z" transform="translate(267.231 112.15)" fill="#167f71"/>
+    <circle id="Oval" cx="5.5" cy="5.5" r="5.5" transform="translate(230.21 94.605)" fill="#472d2d"/>
+    <path id="Star-2" data-name="Star" d="M7.94,12.437,3.305,15,4.19,9.572.44,5.729l5.182-.792L7.94,0l2.317,4.937,5.182.792L11.69,9.572,12.575,15Z" transform="translate(51.639 127.921)" fill="#ff001e"/>
+    <path id="Triangle-2" data-name="Triangle" d="M6.133,0l6.133,12.266H0Z" transform="translate(79.731 177.862)" fill="#332da1"/>
+    <circle id="Oval-2" data-name="Oval" cx="3.5" cy="3.5" r="3.5" transform="translate(80.21 147.605)" fill="#167f71"/>
+    <ellipse id="Oval-3" data-name="Oval" cx="5.5" cy="5" rx="5.5" ry="5" transform="translate(80.21 68.605)" fill="#ff6b00"/>
+  </g>
+</svg>
