@@ -1,27 +1,4 @@
-// ZIM - http://zimjs.com - Code Creativity!
-// JavaScript Canvas Framework for General Interactive Media
-// free to use - donati ons welcome of course! http://zimjs.com/donate
 
-// ZIM GAME - see http://zimjs.com/code#libraries for examples
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~
-// DESCRIPTION - LeaderBoard coded in 2017, Board in 2019 (c) Inventor Dan Zen http://danzen.com
-// Helper code for making games on the HTML Canvas with JavaScript
-// Zim already has a number of functions and classes that can help with games for example:
-// well... just about everthing in ZIM ;-)  Okay, here are a list of common ones:
-// hitTestPoint, hitTestReg, hitTestRect, hitTestCircle, hitTestGrid
-// Sprite, Dynamo, Scroller, Accelerator, loadAssets and asset
-// animate, move, Ticker, GamePad, MotionController
-// Label, Button, Slider, Dial, Tabs, Pane, ColorPicker, Swipe, Swiper, Indicator
-// scale, scaleTo, center, centerReg, addTo, removeFrom
-// Circle, Rectangle, Triangle
-// constrain, Damp, ProportionDamp
-
-// The Game Module provides a LeaderBoard, Meter, Board, Person, Orb, Tree, Timer and Scorer
-
-// DOCS
-// As of ZIM 10, the Docs are provided at https://zimjs.com/docs.html
-// See GAME MODULE at bottom
 
 var zim = function(zim) {
 
